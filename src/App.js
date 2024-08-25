@@ -1,25 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { useState , useEffect } from "react";
+import './login.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+function Logindiv(){
+  return(
+    <>
+    <div className="loginconatiner">
+      <div className="loginbox">
+         <h1>login Form</h1>
+         <form>
+          <div>
+          <label>Name</label> 
+          <input id="password" name="name" type="text" defaultValue="John Doe" />
+          </div>
+          <div>
+          <label>email</label> 
+          <input id="password" name="email" type="email" defaultValue="Johndoe@emial.xyz" />
+          </div>
+          <div>
+          <label>Password</label> 
+          <input id="password" name="password" type="password" defaultValue="password" />
+          </div>
+        
+         </form>
+
+      </div>
+  
     </div>
-  );
+    </>
+  )
 }
 
-export default App;
+
+function Maindiv(){
+  return(
+    <>
+    <div>
+      <Logindiv />
+    </div>
+
+    </>
+  )
+}
+
+export default Maindiv
