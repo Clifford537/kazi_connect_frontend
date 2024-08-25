@@ -101,7 +101,7 @@ body {
   }
   
   .social-button {
-    width: 100%;
+    width: 40%;
     padding: 8px;
     margin-bottom: 10px;
     border: none;
@@ -113,10 +113,12 @@ body {
   .fb-button {
     background-color: #3b5998;
     color: white;
+    margin-left: 10px;
   }
   
   .google-button {
     background-color: #db4437;
     color: white;
+    margin-left: 10px;
   }
   
