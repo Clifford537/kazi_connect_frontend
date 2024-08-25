@@ -34,6 +34,10 @@ function RegisterForm() {
             <label htmlFor="password">Password</label>
             <input type="password" id="password" name="password" defaultValue="password" />
           </div>
+          <div className="form-group">
+            <label htmlFor="password">Password</label>
+            <input type="password" id="password" name="password" defaultValue="password" />
+          </div>
           <div className="form-options">
             <label>
               <input type="checkbox" name="terms" />

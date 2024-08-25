@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 //import LoginForm from './login';
-import Registerform from './register'
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Registerform />
+    <LoginForm />
   </React.StrictMode>
 );
 
