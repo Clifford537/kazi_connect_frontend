@@ -1,47 +1,40 @@
-import React from "react";
-import { useState , useEffect } from "react";
-import './login.css'
+import React from 'react';
+import './login.css';
 
-
-function Logindiv(){
-  return(
-    <>
-    <div className="loginconatiner">
-      <div className="loginbox">
-         <h1>login Form</h1>
-         <form>
-          <div>
-          <label>Name</label> 
-          <input id="password" name="name" type="text" defaultValue="John Doe" />
+function LoginForm() {
+  return (
+    <div className="login-container">
+      <div className="login-box">
+        <h2 className="login-title">Login</h2>
+        <form>
+          <div className="form-group">
+            <label htmlFor="email">Email</label>
+            <input type="email" id="email" name="email" defaultValue="kaziconn@gmail.com" />
           </div>
-          <div>
-          <label>email</label> 
-          <input id="password" name="email" type="email" defaultValue="Johndoe@emial.xyz" />
+          <div className="form-group">
+            <label htmlFor="password">Password</label>
+            <input type="password" id="password" name="password" defaultValue="password" />
           </div>
-          <div>
-          <label>Password</label> 
-          <input id="password" name="password" type="password" defaultValue="password" />
+          <div className="form-options">
+            <label>
+              <input type="checkbox" name="remember" />
+              Remember me
+            </label>
+            <a href="#" className="forgot-password">Forgot Password</a>
           </div>
-        
-         </form>
-
+          <button type="submit" className="login-button">Login</button>
+        </form>
+        <div className="signup-section">
+          <p>Don't have an account? <a href="#">Sign up</a></p>
+        </div>
+        <div className="social-login">
+          <p>or login with</p>
+          <button className="social-button fb-button">Facebook</button>
+          <button className="social-button google-button">Google</button>
+        </div>
       </div>
-  
     </div>
-    </>
-  )
+  );
 }
 
-
-function Maindiv(){
-  return(
-    <>
-    <div>
-      <Logindiv />
-    </div>
-
-    </>
-  )
-}
-
-export default Maindiv
+export default LoginForm;
